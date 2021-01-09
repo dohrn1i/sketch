@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container">
+        <div class="header">
+            <h1>Sketch</h1>
+        </div>
+        <div id="button-container">
+            <button title="Grid Size"><input id="size-range" type="range" min="1" max="64" value="16"></button>
+            <button id="color-choice"><input type="color" id="input-color" value="#000000" title="Pen Color"></button>
+            <button id="color-choice" class="buttons" data-color="rainbow" title="Rainbow"><i class='bx bxs-magic-wand bx-sm'></i></button>
+            <button id="color-choice" class="buttons" data-color="eraser" title="Eraser"><i class='bx bx-eraser bx-sm'></i></button>
+            <button id="clear" class="buttons" title="Clear"><i class='bx bx-trash-alt bx-sm'></i></button>
+        </div>
+        <div id="grid-wrapper">
+            <div id="grid-container" class="grid"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
